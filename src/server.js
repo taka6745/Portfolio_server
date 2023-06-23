@@ -6,7 +6,7 @@ const knexConfig = require('../knexfile');
 const cors = require('cors');
 
 const app = express();
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT;
 
 // Initialize knex
 const knex = Knex(knexConfig);
@@ -18,10 +18,10 @@ app.use(cors());
 knex.migrate.latest()
   .then(() => {
     console.log('Migrations run successfully');
-    return knex.seed.run();
+    // return knex.seed.run();
   })
   .then(() => {
-    console.log('Seeds run successfully');
+    // console.log('Seeds run successfully');
   })
   .catch((error) => {
     console.error(`Error setting up the database: ${error}`);

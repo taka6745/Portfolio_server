@@ -11,6 +11,9 @@ const headers = { Authorization: `token ${githubToken}` };
 
 router.get('/', async (req, res) => {
     try {
+        // Delete all records from the 'projects' table
+        await knex('projects').del();
+
         // Fetch all repositories from GitHub
         const { data: repositories } = await axios.get('https://api.github.com/user/repos', { headers });
 
@@ -26,7 +29,7 @@ router.get('/', async (req, res) => {
                 // Parse the decoded content as JSON
                 const portfolioData = JSON.parse(decodedContent);
 
-                // Insert or update the record in the database
+                // Insert the record in the database
                 await knex('projects').insert({
                     title: portfolioData.title,
                     description: portfolioData.description,
@@ -34,7 +37,9 @@ router.get('/', async (req, res) => {
                     photo: portfolioData.photo,
                     tags: portfolioData.tags,
                     related_projects: portfolioData.related_projects,
+                    link: repo.html_url
                 });
+
             } catch (error) {
                 console.log(`portfolio.json not found or error parsing in repo ${repo.name}`);
             }
