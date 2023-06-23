@@ -1,8 +1,8 @@
 {
-    "title": "My Awesome Project",
-    "description": "This is a description of my awesome project. It showcases my skills in web development, including HTML, CSS, and JavaScript.",
-    "type": "web",
-    "photo": "https://www.google.com/url?sa=i&url=https%3A%2F%2Fcommons.wikimedia.org%2Fwiki%2FFile%3AExample_image.svg&psig=AOvVaw3ofBwFZNPhOMjs7j8L0AzS&ust=1687598386958000&source=images&cd=vfe&ved=0CBAQjRxqFwoTCNjJwIWI2f8CFQAAAAAdAAAAABAE",
-    "tags": "HTML, CSS, JavaScript",
-    "related_projects": "Another Awesome Project, Yet Another Awesome Project"
+    "title": "GitHub Portfolio API",
+    "description": "This project is an API for a portfolio website. It is built using Node.js and serves as a backend that interacts with a MySQL database to manage portfolio projects. The API fetches repositories from GitHub and looks for a portfolio.json file in each repository to collect portfolio project data. The entire project is containerized using Docker and orchestrated with Docker Compose for easy deployment.",
+    "type": "API",
+    "photo": "https://upload.wikimedia.org/wikipedia/commons/8/84/Example_image.svg",
+    "tags": "Docker, Node.js, SQL",
+    "related_projects": "Portfolio Site"
 }
