@@ -11,7 +11,7 @@ This project is a simple Node.js server built to be run using Docker Compose. It
 - [Project Management](#project-management)
 
 ## Project Structure
-
+```
 github-portfolio-server/
 │
 ├── docker-compose.yml
@@ -26,7 +26,7 @@ github-portfolio-server/
 │ └── index.js
 │
 └── package.json
-
+``` 
 
 - `docker-compose.yml`: Contains Docker Compose configuration.
 - `Dockerfile`: Defines how to build the Docker image for the server.
