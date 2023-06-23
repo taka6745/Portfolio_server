@@ -1,0 +1,8 @@
+{
+    "title": "My Awesome Project",
+    "description": "This is a description of my awesome project. It showcases my skills in web development, including HTML, CSS, and JavaScript.",
+    "type": "web",
+    "photo": "https://www.google.com/url?sa=i&url=https%3A%2F%2Fcommons.wikimedia.org%2Fwiki%2FFile%3AExample_image.svg&psig=AOvVaw3ofBwFZNPhOMjs7j8L0AzS&ust=1687598386958000&source=images&cd=vfe&ved=0CBAQjRxqFwoTCNjJwIWI2f8CFQAAAAAdAAAAABAE",
+    "tags": "HTML, CSS, JavaScript",
+    "related_projects": "Another Awesome Project, Yet Another Awesome Project"
+}

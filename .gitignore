@@ -1,0 +1,10 @@
+# Ignore environment files
+.env
+
+# Ignore Node.js modules
+node_modules/
+
+# Ignore npm lock files
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
