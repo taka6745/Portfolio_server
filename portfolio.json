@@ -2,7 +2,7 @@
     "title": "GitHub Portfolio API",
     "description": "This project is an API for a portfolio website. It is built using Node.js and serves as a backend that interacts with a MySQL database to manage portfolio projects. The API fetches repositories from GitHub and looks for a portfolio.json file in each repository to collect portfolio project data. The entire project is containerized using Docker and orchestrated with Docker Compose for easy deployment.",
     "type": "API",
-    "photo": "https://upload.wikimedia.org/wikipedia/commons/8/84/Example_image.svg",
+    "photo": "https://images.ctfassets.net/40w0m41bmydz/2gi5potjRwJgFZeIdO2p9D/ebe2ef1d877c7981184362e96474a707/images___blogs___github.jpg?w=1980&h=1042&fl=progressive&q=50&fm=jpg",
     "tags": "Docker, Node.js, SQL",
     "related_projects": "Portfolio Site"
 }
