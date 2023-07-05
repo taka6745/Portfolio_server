@@ -5,9 +5,11 @@ services:
     build: .
     command: npm start
     volumes:
+      - ./certs:/etc/letsencrypt  # Mount a volume for Certbot to store the SSL certificates
       - .:/usr/src/app
     ports:
-      - "3030:3030"
+      - "80:80"
+      - "443:443"
     depends_on:
       - db
     environment:
