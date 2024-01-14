@@ -1,5 +1,5 @@
-# Use the official Node.js image as the base, for arm64 architecture
-FROM --platform=linux/arm64/v8 node
+# Use the official Node.js image as the base
+FROM node
 
 # Set the working directory inside the container
 WORKDIR /app
@@ -13,8 +13,6 @@ RUN npm install
 # Copy the rest of the application code to the container
 COPY . .
 
-# Install Certbot
-RUN apt-get update && apt-get install -y certbot
 
 # Expose the ports for HTTP and HTTPS
 EXPOSE 80
