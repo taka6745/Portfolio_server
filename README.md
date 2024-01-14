@@ -43,13 +43,15 @@ github-portfolio-server/
 2. **Environment Variables**: Set up environment variables in a `.env` file (e.g. GITHUB_API_KEY, DB_CONNECTION_STRING).
 
 ### Variables Required 
-```MYSQL_HOST
+```
+MYSQL_HOST
 MYSQL_USER
 MYSQL_PASSWORD
 MYSQL_DATABASE
 MYSQL_ROOT_PASSWORD
 GITHUB_TOKEN
-PORT```
+PORT
+```
 
 3. **Install Docker**: If you do not have Docker installed, download and install it from [Docker's website](https://www.docker.com/products/docker-desktop).
 
