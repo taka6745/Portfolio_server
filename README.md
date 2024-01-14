@@ -57,9 +57,9 @@ PORT
 
 ## How to Run
 
-1. **Start Database**: First open a terminal in the project root directory and run `docker-compose -f docker-compose-web.yml up` to start the database image.
+1. **Start Database**: First open a terminal in the project root directory and run `docker-compose -f docker-compose-db.yml up` to start the database image.
 
-2. **Start the Server**: Run `docker-compose -f docker-compose-db.yml up` to start the server. It will be accessible at `http://localhost`.
+2. **Start the Server**: Run `docker-compose -f docker-compose-web.yml up` to start the server. It will be accessible at `http://localhost`.
 
 ## Routes
 
